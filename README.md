@@ -13,12 +13,15 @@ git clone --recurse-submodules https://github.com/ambalabanov/badusb.git
   
 ## Boards Manager Installation
 
-This core can be installed using the boards manager. The boards manager URL is:
+This core can be installed using the boards manager. 
 
+1. File --> Preferences, enter the above URL in "Additional boards manager URLs"
+   
 `http://drazzy.com/package_drazzy.com_index.json`
 
-1. File->Preferences on a PC, or Arduino->Preferences on a Mac, enter the above URL in "Additional Boards Manager URLs"
-2. Tools -> Boards -> Boards Manager...
+![image](https://github.com/user-attachments/assets/a72f8496-3f36-468f-ad02-d3fb005e1992)
+   
+2. Tools -> Board -> Boards Manager...
 3. Select "ATTinyCore by Spence Konde" and click "Install"
 
 ![image](https://github.com/user-attachments/assets/4d2b08db-ca7a-43cb-9056-6c654d3edba4)
@@ -45,7 +48,6 @@ sudo udevadm control --reload
 
 ## Compile & Upload Digispark-badusb.ino sketch
 
-```
-File --> Open...
-Sketch --> Upload Using Programmer
-```
+1. File --> Open...
+2. Sketch --> Upload Using Programmer
+
