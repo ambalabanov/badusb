@@ -51,3 +51,18 @@ sudo udevadm control --reload
 1. File --> Open...
 2. Sketch --> Upload Using Programmer
 
+## Test connection
+```
+sudo dmesg --follow
+[50149.578603] usb 1-2: new low-speed USB device number 23 using xhci_hcd
+[50149.726654] usb 1-2: New USB device found, idVendor=16c0, idProduct=27db, bcdDevice= 1.00
+[50149.726663] usb 1-2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[50149.726666] usb 1-2: Product: DigiKey
+[50149.726669] usb 1-2: Manufacturer: digistump.com
+[50149.730418] input: digistump.com DigiKey as /devices/pci0000:00/0000:00:14.0/usb1/1-2/1-2:1.0/0003:16C0:27DB.0007/input/input19
+[50149.785621] hid-generic 0003:16C0:27DB.0007: input,hidraw2: USB HID v1.01 Keyboard [digistump.com DigiKey] on usb-0000:00:14.0-2/input0
+
+lsusb
+Bus 001 Device 023: ID 16c0:27db Van Ooijen Technische Informatica Keyboard
+
+```
