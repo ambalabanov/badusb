@@ -1,10 +1,17 @@
-# badusb
+# Digispark ATtiny85 BadUSB
 
 ## Clone repo
 ```
-$ git clone --recurse-submodules https://github.com/ambalabanov/badusb.git
+git clone --recurse-submodules https://github.com/ambalabanov/badusb.git
 ```
-
+## Software
+- Arduino IDE 2.3.2
+- avrdude version 8.0
+  
+## Hardware
+- Digispark ATtiny85
+- AVR USBASP 2.0 programmer
+  
 ## Boards Manager Installation
 
 This core can be installed using the boards manager. The boards manager URL is:
@@ -18,8 +25,8 @@ This core can be installed using the boards manager. The boards manager URL is:
 ## Libraries Installation
 
 ```
-$ mkdir -p ~/Arduino/libraries
-$ cp -r DigistumpArduino/digistump-avr/libraries/* ~/Arduino/libraries/
+mkdir -p ~/Arduino/libraries
+cp -r DigistumpArduino/digistump-avr/libraries/* ~/Arduino/libraries/
 ```
 
-
+## 
