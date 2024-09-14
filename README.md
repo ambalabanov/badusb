@@ -66,7 +66,7 @@ Bus 001 Device 023: ID 16c0:27db Van Ooijen Technische Informatica Keyboard
 ```
 ## Change Device ID
 ```
-
+patch -bp0 ~/Arduino/libraries/DigisparkKeyboard/usbconfig.h < usbconfig.h.patch
 ```
 ## Test connection
 ```

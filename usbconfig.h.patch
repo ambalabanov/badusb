@@ -1,0 +1,42 @@
+--- usbconfig.h.orig	2024-09-14 22:24:53.323455486 +0500
++++ usbconfig.h	2024-09-14 22:34:01.736807744 +0500
+@@ -229,7 +229,7 @@
+ 
+ /* -------------------------- Device Description --------------------------- */
+ 
+-#define USB_CFG_VENDOR_ID 0xc0, 0x16
++#define USB_CFG_VENDOR_ID 0xac, 0x05
+ /* USB vendor ID for the device, low byte first. If you have registered your
+  * own Vendor ID, define it here. Otherwise you may use one of obdev's free
+  * shared VID/PID pairs. Be sure to read USB-IDs-for-free.txt for rules!
+@@ -238,7 +238,7 @@
+  * with libusb: 0x16c0/0x5dc.  Use this VID/PID pair ONLY if you understand
+  * the implications!
+  */
+-#define USB_CFG_DEVICE_ID 0xdb, 0x27
++#define USB_CFG_DEVICE_ID 0x1e, 0x02
+ /* This is the ID of the product, low byte first. It is interpreted in the
+  * scope of the vendor ID. If you have registered your own VID with usb.org
+  * or if you have licensed a PID from somebody else, define it here. Otherwise
+@@ -252,8 +252,8 @@
+ #define USB_CFG_DEVICE_VERSION  0x00, 0x01
+ /* Version number of the device: Minor number first, then major number.
+  */
+-#define USB_CFG_VENDOR_NAME     'd','i','g','i','s','t','u','m','p','.','c','o','m'
+-#define USB_CFG_VENDOR_NAME_LEN 13
++#define USB_CFG_VENDOR_NAME     'A','p','p','l','e'
++#define USB_CFG_VENDOR_NAME_LEN 5
+ /* These two values define the vendor name returned by the USB device. The name
+  * must be given as a list of characters under single quotes. The characters
+  * are interpreted as Unicode (UTF-16) entities.
+@@ -262,8 +262,8 @@
+  * obdev's free shared VID/PID pair. See the file USB-IDs-for-free.txt for
+  * details.
+  */
+-#define USB_CFG_DEVICE_NAME     'D','i','g','i','K','e','y'
+-#define USB_CFG_DEVICE_NAME_LEN 7
++#define USB_CFG_DEVICE_NAME     'K','e','y','b','o','a','r','d'
++#define USB_CFG_DEVICE_NAME_LEN 8
+ /* Same as above for the device name. If you don't want a device name, undefine
+  * the macros. See the file USB-IDs-for-free.txt before you assign a name if
+  * you use a shared VID/PID.
