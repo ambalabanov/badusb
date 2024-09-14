@@ -1,3 +1,6 @@
 [submodule "ATTinyCore"]
 	path = ATTinyCore
 	url = https://github.com/SpenceKonde/ATTinyCore
+[submodule "DigistumpArduino"]
+	path = DigistumpArduino
+	url = https://github.com/digistump/DigistumpArduino
