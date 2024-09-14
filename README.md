@@ -29,12 +29,21 @@ mkdir -p ~/Arduino/libraries
 cp -r DigistumpArduino/digistump-avr/libraries/* ~/Arduino/libraries/
 ```
 
-## udev rules Setup
+## Setup udev rules 
 
 ```
 sudo cp 99-USBasp.rules /etc/udev/rules.d/
 sudo udevadm control --reload
+```
+## Connect Digispark to USBASP
+![digi-pins-1024x403](https://github.com/user-attachments/assets/47889380-2f17-469f-9ef7-e213471dde2a)
+
+## Configure Board in Arduino IDE
+![board-setup](https://github.com/user-attachments/assets/4f8a271c-ca0d-447e-9936-66559471af9c)
+
+## Compile & Upload Digispark-badusb.ino sketch
 
 ```
-
-
+File --> Open...
+Sketch --> Upload Using Programmer
+```
