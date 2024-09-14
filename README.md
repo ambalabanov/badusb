@@ -29,4 +29,12 @@ mkdir -p ~/Arduino/libraries
 cp -r DigistumpArduino/digistump-avr/libraries/* ~/Arduino/libraries/
 ```
 
-## 
+## udev rules Setup
+
+```
+sudo cp 99-USBasp.rules /etc/udev/rules.d/
+sudo udevadm control --reload
+
+```
+
+
