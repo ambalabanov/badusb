@@ -6,7 +6,6 @@ git clone --recurse-submodules https://github.com/ambalabanov/badusb.git
 ```
 ## Software
 - Arduino IDE 2.3.2
-- avrdude version 8.0
   
 ## Hardware
 - Digispark ATtiny85
@@ -21,6 +20,9 @@ This core can be installed using the boards manager. The boards manager URL is:
 1. File->Preferences on a PC, or Arduino->Preferences on a Mac, enter the above URL in "Additional Boards Manager URLs"
 2. Tools -> Boards -> Boards Manager...
 3. Select "ATTinyCore by Spence Konde" and click "Install"
+
+![image](https://github.com/user-attachments/assets/4d2b08db-ca7a-43cb-9056-6c654d3edba4)
+
 
 ## Libraries Installation
 
