@@ -8,5 +8,5 @@ This core can be installed using the boards manager. The boards manager URL is:
 
 1. File->Preferences on a PC, or Arduino->Preferences on a Mac, enter the above URL in "Additional Boards Manager URLs"
 2. Tools -> Boards -> Boards Manager...
-3. Select "ATTinyCore by Spence Konde" and click "Install
+3. Select "ATTinyCore by Spence Konde" and click "Install"
 
