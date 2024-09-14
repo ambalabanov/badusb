@@ -1,5 +1,10 @@
 # badusb
 
+## Clone repo
+```
+$ git clone --recurse-submodules https://github.com/ambalabanov/badusb.git
+```
+
 ## Boards Manager Installation
 
 This core can be installed using the boards manager. The boards manager URL is:
