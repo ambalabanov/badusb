@@ -60,9 +60,25 @@ sudo dmesg --follow
 [50149.726666] usb 1-2: Product: DigiKey
 [50149.726669] usb 1-2: Manufacturer: digistump.com
 [50149.730418] input: digistump.com DigiKey as /devices/pci0000:00/0000:00:14.0/usb1/1-2/1-2:1.0/0003:16C0:27DB.0007/input/input19
-[50149.785621] hid-generic 0003:16C0:27DB.0007: input,hidraw2: USB HID v1.01 Keyboard [digistump.com DigiKey] on usb-0000:00:14.0-2/input0
 
 lsusb
 Bus 001 Device 023: ID 16c0:27db Van Ooijen Technische Informatica Keyboard
+```
+## Change Device ID
+```
 
+```
+## Test connection
+```
+sudo dmesg --follow
+[52287.211587] usb 1-2: new low-speed USB device number 27 using xhci_hcd
+[52287.358924] usb 1-2: New USB device found, idVendor=05ac, idProduct=021e, bcdDevice= 1.00
+[52287.358933] usb 1-2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[52287.358937] usb 1-2: Product: Keyboard
+[52287.358939] usb 1-2: Manufacturer: Apple
+[52287.363174] apple 0003:05AC:021E.000A: Fn key not found (Apple Wireless Keyboard clone?), disabling Fn key handling
+[52287.363247] input: Apple Keyboard as /devices/pci0000:00/0000:00:14.0/usb1/1-2/1-2:1.0/0003:05AC:021E.000A/input/input22
+
+lsusb
+Bus 001 Device 027: ID 05ac:021e Apple, Inc. Aluminum Mini Keyboard (ISO)
 ```
