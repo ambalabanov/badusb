@@ -10,3 +10,11 @@ This core can be installed using the boards manager. The boards manager URL is:
 2. Tools -> Boards -> Boards Manager...
 3. Select "ATTinyCore by Spence Konde" and click "Install"
 
+## Libraries Installation
+
+```
+$ mkdir -p ~/Arduino/libraries
+$ cp -r DigistumpArduino/digistump-avr/libraries/* ~/Arduino/libraries/
+```
+
+
