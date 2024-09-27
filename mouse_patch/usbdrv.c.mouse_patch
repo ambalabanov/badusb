@@ -1,0 +1,49 @@
+diff --git a/Users/aliya/git/badusb/DigistumpArduino/digistump-avr/libraries/DigisparkMouse/usbdrv.c b/Users/aliya/Desktop/usbdrv.c
+index 354e9d3..180ef4b 100644
+--- a/Users/aliya/git/badusb/DigistumpArduino/digistump-avr/libraries/DigisparkMouse/usbdrv.c
++++ b/Users/aliya/Desktop/usbdrv.c
+@@ -111,7 +111,7 @@ const PROGMEM int usbDescriptorStringSerialNumber[] = {
+ const PROGMEM char usbDescriptorDevice[] = {    /* USB device descriptor */
+     18,         /* sizeof(usbDescriptorDevice): length of descriptor in bytes */
+     USBDESCR_DEVICE,        /* descriptor type */
+-    0x10, 0x01,             /* USB version supported */
++    0x00, 0x02,             /* USB version supported */
+     USB_CFG_DEVICE_CLASS,
+     USB_CFG_DEVICE_SUBCLASS,
+     0,                      /* protocol */
+@@ -151,7 +151,7 @@ const PROGMEM char usbDescriptorConfiguration[] = {    /* USB configuration desc
+ #if USB_CFG_IS_SELF_POWERED
+     (1 << 7) | USBATTR_SELFPOWER,       /* attributes */
+ #else
+-    (1 << 7),                           /* attributes */
++    (1 << 7) | USBATTR_BUSPOWER | USBATTR_REMOTEWAKE,                           /* attributes */
+ #endif
+     USB_CFG_MAX_BUS_POWER/2,            /* max USB current in 2mA units */
+ /* interface descriptor follows inline: */
+@@ -167,7 +167,7 @@ const PROGMEM char usbDescriptorConfiguration[] = {    /* USB configuration desc
+ #if (USB_CFG_DESCR_PROPS_HID & 0xff)    /* HID descriptor */
+     9,          /* sizeof(usbDescrHID): length of descriptor in bytes */
+     USBDESCR_HID,   /* descriptor type: HID */
+-    0x01, 0x01, /* BCD representation of HID version */
++    0x11, 0x01, /* BCD representation of HID version */
+     0x00,       /* target country code */
+     0x01,       /* number of HID Report (or other HID class) Descriptor infos to follow */
+     0x22,       /* descriptor type: report */
+@@ -178,7 +178,7 @@ const PROGMEM char usbDescriptorConfiguration[] = {    /* USB configuration desc
+     USBDESCR_ENDPOINT,  /* descriptor type = endpoint */
+     (char)0x81, /* IN endpoint number 1 */
+     0x03,       /* attrib: Interrupt endpoint */
+-    8, 0,       /* maximum packet size */
++    4, 0,       /* maximum packet size */
+     USB_CFG_INTR_POLL_INTERVAL, /* in ms */
+ #endif
+ #if USB_CFG_HAVE_INTRIN_ENDPOINT3   /* endpoint descriptor for endpoint 3 */
+@@ -186,7 +186,7 @@ const PROGMEM char usbDescriptorConfiguration[] = {    /* USB configuration desc
+     USBDESCR_ENDPOINT,  /* descriptor type = endpoint */
+     (char)0x83, /* IN endpoint number 1 */
+     0x03,       /* attrib: Interrupt endpoint */
+-    8, 0,       /* maximum packet size */
++    4, 0,       /* maximum packet size */
+     USB_CFG_INTR_POLL_INTERVAL, /* in ms */
+ #endif
+ };
