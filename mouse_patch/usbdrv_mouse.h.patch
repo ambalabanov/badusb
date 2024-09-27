@@ -1,7 +1,7 @@
-diff --git a/Users/aliya/git/badusb/DigistumpArduino/digistump-avr/libraries/DigisparkMouse/usbdrv.h b/Users/aliya/Desktop/usbdrv.h
+diff --git a/usbdrv.h b/usbdrv_mouse.h
 index e766173..77d8f4a 100644
---- a/Users/aliya/git/badusb/DigistumpArduino/digistump-avr/libraries/DigisparkMouse/usbdrv.h
-+++ b/Users/aliya/Desktop/usbdrv.h
+--- a/usbdrv.h
++++ b/usbdrv_mouse.h
 @@ -749,7 +749,7 @@ typedef struct usbRequest{
  #define USBDESCR_HID_REPORT     0x22
  #define USBDESCR_HID_PHYS       0x23

@@ -1,7 +1,7 @@
-diff --git a/Users/aliya/git/badusb/DigistumpArduino/digistump-avr/libraries/DigisparkMouse/usbconfig.h b/Users/aliya/Desktop/usbconfig.h
+diff --git a/usbconfig.h b/usbconfig_mouse.h
 index 509cdc3..8534ee3 100644
---- a/Users/aliya/git/badusb/DigistumpArduino/digistump-avr/libraries/DigisparkMouse/usbconfig.h
-+++ b/Users/aliya/Desktop/usbconfig.h
+--- a/usbconfig.h
++++ b/usbconfig_mouse.h
 @@ -221,7 +221,7 @@ section at the end of this file).
  
  /* -------------------------- Device Description --------------------------- */

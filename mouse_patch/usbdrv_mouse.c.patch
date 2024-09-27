@@ -1,7 +1,7 @@
-diff --git a/Users/aliya/git/badusb/DigistumpArduino/digistump-avr/libraries/DigisparkMouse/usbdrv.c b/Users/aliya/Desktop/usbdrv.c
+diff --git a/usbdrv.c b/usbdrv_mouse.c
 index 354e9d3..180ef4b 100644
---- a/Users/aliya/git/badusb/DigistumpArduino/digistump-avr/libraries/DigisparkMouse/usbdrv.c
-+++ b/Users/aliya/Desktop/usbdrv.c
+--- a/usbdrv.c
++++ b/usbdrv_mouse.c
 @@ -111,7 +111,7 @@ const PROGMEM int usbDescriptorStringSerialNumber[] = {
  const PROGMEM char usbDescriptorDevice[] = {    /* USB device descriptor */
      18,         /* sizeof(usbDescriptorDevice): length of descriptor in bytes */
